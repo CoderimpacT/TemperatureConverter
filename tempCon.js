@@ -4,16 +4,14 @@ function convertTemperature() {
   let convertedTemperature = 0;
 
   if (unit === "celsius") {
-    convertedTemperature = (temperature * 9) / 5 + 32;
+    convertedTemperature = temperature;
   } else if (unit === "fahrenheit") {
     convertedTemperature = ((temperature - 32) * 5) / 9;
   } else if (unit === "kelvin") {
-    convertedTemperature = temperature + 273.15;
+    convertedTemperature = temperature - 273.15;
   }
 
   document.getElementById(
     "convertedTemperature"
-  ).innerText = `Converted Temperature: ${convertedTemperature.toFixed(
-    2
-  )} ${unit.toUpperCase()}`;
+  ).innerText = `Converted Temperature: ${convertedTemperature.toFixed(2)} °C`;
 }
