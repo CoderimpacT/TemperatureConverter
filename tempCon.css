@@ -55,7 +55,7 @@ button:hover {
   font-size: 18px;
   transform: translateY(-50%);
   transition: 0.5s;
-  color: gray;
+  color: rgb(0, 0, 0);
   padding: 0px 5px;
   pointer-events: none;
 }
@@ -76,7 +76,8 @@ button:hover {
 .form-div input:valid ~ label {
   top: 0px;
   font-size: 15px;
-  background-color: white;
+  color: #000000;
+  background-color: aliceblue;
 }
 
 h2 {
